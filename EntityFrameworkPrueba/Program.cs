@@ -57,6 +57,8 @@ namespace EntityFrameworkPrueba
                 Console.WriteLine(c);
                 Console.WriteLine(c.Usuario);
             }
+
+            Console.WriteLine(db.BuscarPorEmail("javier@email.net").FirstOrDefault().Id);
         }
     }
 }
